@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=FSL
+Comment=FSL mathematics application
+Exec=/mri/scripts/start-fsl
+Icon=leafpad
+Terminal=false
+Type=Application
+Categories=Education;Mathematics;

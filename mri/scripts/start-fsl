@@ -1,0 +1,6 @@
+#!/bin/bash
+export XAUTHORITY=''
+export QT_GRAPHICSSYSTEM=native
+source /etc/fsl/5.0/fsl.sh
+tcsh -c "eval source /etc/fsl/5.0/fsl.sh; eval /usr/lib/fsl/5.0/fsl"
+

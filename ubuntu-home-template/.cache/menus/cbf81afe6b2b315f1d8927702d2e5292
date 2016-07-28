@@ -1,0 +1,194 @@
+1.1
+applications.menu
+14
+D/home/ubuntu/.local/share/desktop-directories
+D/usr/local/share/desktop-directories
+D/usr/share/desktop-directories
+D/usr/share/gdm/desktop-directories
+D/var/lib/menu-xdg/desktop-directories
+D/home/ubuntu/.local/share/applications
+D/usr/local/share/applications
+D/usr/share/applications
+D/usr/share/gdm/applications
+D/var/lib/menu-xdg/applications
+D/etc/xdg/menus/applications-merged
+D/home/ubuntu/.config/menus/applications-merged
+F/home/ubuntu/.config/menus/lxde-applications.menu
+F/etc/xdg/menus/lxde-applications.menu
+
++Applications
+Applications
+Applications
+applications-other
+lxde-menu-applications.directory
+2
++Accessories
+Accessories
+Desktop accessories
+applications-accessories
+lxde-utility.directory
+2
+-pcmanfm.desktop
+File Manager PCManFM
+Browse the file system and manage the files
+system-file-manager
+
+7
+File Manager PCManFM
+pcmanfm %U
+2
+0
+-gpicview.desktop
+Image Viewer
+View your images easily
+gpicview
+
+7
+Image Viewer
+gpicview %f
+2
+0
+-lxterminal.desktop
+LXTerminal
+Use the command line
+lxterminal
+
+7
+LXTerminal
+lxterminal
+0
+0
+-leafpad.desktop
+Leafpad
+Simple text editor
+leafpad
+
+7
+Leafpad
+leafpad %f
+0
+0
+-xarchiver.desktop
+Xarchiver
+A GTK+2 only archive manager
+xarchiver
+
+7
+Xarchiver
+xarchiver %f
+2
+0
+
++Education
+Education
+
+applications-science
+lxde-education.directory
+2
+-matlab.desktop
+Matlab
+Matlab mathematics application
+leafpad
+
+5
+Matlab
+/matlabR2014a/bin/matlab -desktop
+0
+0
+
++Internet
+Internet
+Programs for Internet access such as web and email
+applications-internet
+lxde-network.directory
+2
+-firefox.desktop
+Firefox Web Browser
+Browse the World Wide Web
+firefox
+
+7
+Firefox Web Browser
+firefox %u
+2
+0
+-x11vnc.desktop
+X11VNC Server
+Share this desktop by VNC
+computer
+
+7
+X11VNC Server
+x11vnc -gui tray=setpass -rfbport PROMPT -bg -o %%HOME/.x11vnc.log.%%VNCDISPLAY
+0
+0
+
+-
++DesktopSettings
+Preferences
+Personal preferences
+preferences-desktop
+lxde-settings.directory
+2
+-lxappearance.desktop
+Customize Look and Feel
+Customizes look and feel of your desktop and applications
+preferences-desktop-theme
+
+7
+Customize Look and Feel
+lxappearance
+2
+-15
+-pcmanfm-desktop-pref.desktop
+Desktop Preferences
+Change desktop wallpapers and behavior of desktop manager
+user-desktop
+
+7
+Desktop Preferences
+pcmanfm --desktop-pref
+2
+-15
+-lxsession-edit.desktop
+Desktop Session Settings
+Manage applications loaded in desktop session
+xfwm4
+
+7
+Desktop Session Settings
+lxsession-edit
+0
+-15
+-lxinput.desktop
+Keyboard and Mouse
+Configure keyboard, mouse, and other input devices
+input-keyboard
+
+7
+Keyboard and Mouse
+lxinput
+2
+1
+-lxrandr.desktop
+Monitor Settings
+Change screen resolution and configure external monitors
+display
+
+7
+Monitor Settings
+lxrandr
+0
+0
+-obconf.desktop
+Openbox Configuration Manager
+Tweak settings for Openbox
+obconf
+
+7
+Openbox Configuration Manager
+obconf %f
+2
+0
+
+

@@ -1,0 +1,22 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version:0.11:$
+
+[PLUGINS]
+libunixprintplugin.so:$
+/matlabR2014a/sys/jxbrowser/glnxa64/xulrunner/xulrunner-linux-64/plugins/libunixprintplugin.so:$
+1.0.0:$
+1412169472000:1:1:$
+The demo print plugin for unix.:$
+Demo Print Plugin for unix/linux:$
+1
+0:application/x-print-unix-nsplugin:Demo Print Plugin for Unix/Linux:.pnt:$
+libnullplugin.so:$
+/matlabR2014a/sys/jxbrowser/glnxa64/xulrunner/xulrunner-linux-64/plugins/libnullplugin.so:$
+1.0.0.15:$
+1412169472000:1:1:$
+The default plugin handles plugin data for mimetypes and extensions that are not specified and facilitates downloading of new plugins.:$
+Default Plugin:$
+1
+0:*:All types:.*:$

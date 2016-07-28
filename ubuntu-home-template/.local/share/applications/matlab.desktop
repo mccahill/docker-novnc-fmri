@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Matlab
+Comment=Matlab mathematics application
+Exec=/matlabR2014a/bin/matlab -desktop
+Icon=leafpad
+Terminal=false
+Type=Application
+Categories=Education;Mathematics;

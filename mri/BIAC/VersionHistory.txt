@@ -1,0 +1,1377 @@
+Version History for BIAC MATLAB Software
+
+---------------------------------------------
+----- Changes from Version 3.1.5 to 3.1.6 ---
+---------------------------------------------
+
+fix/MATLAB65/beep.m
+- beep.m is no longer in general directory since recent versions of
+  MATLAB have their own version
+
+general/buildmex.m
+- Fix to strncmp call for Macs
+
+general/filename2url.m, general/getfilesizes.m, mr/autodetectmr.m,
+mr/bxhabsorb.m, mr/dmdata2bxh.m, mr/readmr.m, mr/readmrhdr.m,
+mr/showsrs2.m, mr/splinealignmr.m, mr/writemr.m
+- fileparts() no longer supports a fourth output argument, which we
+  did not need anyway.
+
+-------------------------------------------------
+----- Changes from Version 3.1.4.3 to 3.1.5 ---
+-------------------------------------------------
+
+showsrs2.m, datarec2mrinfo.m, readmr.m, readmrhdr.m
+- Added support for RGB data
+
+readbxhhdr.m
+- Fix to enable reading filenames that are completely numeric
+
+buildmex.m
+- Fix for Mac paths
+
+-------------------------------------------------
+----- Changes from Version 3.1.4.2 to 3.1.4.3 ---
+-------------------------------------------------
+
+startup-stub.m
+- Move standard BIAC program location from hill to munin
+
+general/findexp.m
+- Moving BIAC experiment database files from fatt to munin
+
+-------------------------------------------------
+----- Changes from Version 3.1.4.1 to 3.1.4.2 ---
+-------------------------------------------------
+
+startup-stub.m
+- Move standard BIAC program location from gall to hill
+
+mr/createmrstruct.m
+- Add support for Linux 64-bit
+
+mr/readmr.m
+- add labels for dimensions beyond 4
+
+mr/showsrs2_cfgtrans.m
+- Added ability to show/hide all overlays with one button click.
+
+mr/showsrs2.m, mr/showsrs2_cfg.m
+- Added overlay by overlay masking options
+
+-------------------------------------------------
+----- Changes from Version 3.1.4 to 3.1.4.1 -----
+-------------------------------------------------
+
+general/findexp.m
+- Moving BIAC experiment database files from huxley to fatt
+
+-------------------------------------------------
+----- Changes from Version 3.1.3 to 3.1.4 -------
+-------------------------------------------------
+
+java/edu/duke/biac/matlabInputStream.java
+- Fix bit manipulation bug when converting from compressed data
+
+-------------------------------------------------
+----- Changes from Version 3.1.2 to 3.1.3 -------
+-------------------------------------------------
+
+mr/showsrs2.m
+- Deal better with the fact that the 'Interpreter' property in figures
+  does not exist in earlier versions of MATLAB.
+
+Removed files: EEGad/info.xml general/info.xml mr/info.xml
+
+-------------------------------------------------
+----- Changes from Version 3.1.1 to 3.1.2 -------
+-------------------------------------------------
+
+mr/readmrgui.m
+- fix a minor bug in a clear statement
+
+mr/readmr.m
+- minor fix indexing origin value from readmrhdr
+
+mr/showsrs2.m
+- turn off subscripts for underscores in legend labels
+- update for later versions of MATLAB
+
+mr/showsrs2_goto.m
+- new tool to remotely control a showsrs2 window to display
+  a different coordinate
+
+-------------------------------------------------
+----- Changes from Version 3.1.0 to 3.1.1 -------
+-------------------------------------------------
+
+mr/mrinfo2datarec.m
+- fix order for datarec children in output XML
+
+mr/writemr.m
+- include all image files in output .bxh file
+
+-------------------------------------------------
+----- Changes from Version 3.0.11 to 3.1.0 ------
+-------------------------------------------------
+ALL FILES:
+- M-Lint: Replace deprecated isstr with ischar.
+- M-Lint: Make unused CVS variables comments for increased efficiency.
+- M-Lint: Remove unnecessary semicolon after function declarations.
+- M-Lint: Remove unnecessary commas after try, catch, and else statements.
+- Remove all dependencies on ispc and nargoutchk (for compatibility
+  with Matlab 5.3).
+
+startup.m
+- Use more robust version parsing code.
+- Updates for gzip reading (add java dir).
+
+---------------------
+BIAC General Toolbox: 
+---------------------
+general/buildmex.m
+- Swapped order of code to remove negation.
+- UNIX build: dynamically link to libxml2, libz, libglib like buildmex.sh
+- Use more robust version parsing code.
+
+general/cellfun2.m
+- Cache MATLAB version.
+- Check number of arguments even when using MEX file.
+- Move persistent variable declaration to top level of function (mlint warning)
+- Use more robust version parsing code.
+
+general/dcmtkdic2matlabdic.m
+- Replace all uses of strfind with findstr (strfind doesn't exist before
+  Matlab 6.1).
+
+general/finddirs.m
+- Correct error message.
+
+general/findexp.m
+- Code cleanup.  Simplified logical and corrected comments.
+- Correct error message.  Remove deprecated isstr call.
+- Corrected comments in code on duplicate entry handling.
+- Fixed bug in error handling of local_parseExperimentFile.
+- M-Lint: Use isempty instead of length == 0.
+
+general/guigets.m
+- M-lint: Do not use ANS as a variable because ANS is frequently overwritten by
+  MATLAB.
+
+general/readxml.c
+- Allow namespace context to be specified as arguments.
+- fix compile abnormality on AIX
+- Make sure all elements have a VALUE.
+
+general/readxml.m
+- Add Matlab version of readxml that doesn't require an external library.
+  Only works if Java is enabled and xmlread is available [added in R13
+  (version 6.5)]
+  XPaths most certainly don't work yet.
+- Add log message.
+- Moved XPath code out into parseXPaths.m
+
+general/writexml.m
+- SLOW version of writexml intended for use when you don't have libxml2.
+
+general/@url/eq.m
+- M-lint: Do not use ANS as a variable because ANS is frequently overwritten by
+  MATLAB.
+
+general/@url/get.m
+- Replace all uses of strfind with findstr (strfind doesn't exist before
+  Matlab 6.1).
+
+general/@url/url.m
+- Replace all uses of strfind with findstr (strfind doesn't exist before
+  Matlab 6.1).
+
+general/parseXPaths.m
+- Moved this code out from readxml.m
+
+general/private/deleteonclose.c
+- Updates for gzip reading
+
+general/private/grablocation.m
+- Use exist for directory existance check.
+- Updates to support reading of compressed files (if Java is enabled).
+  Now matlabInputStream supports several MATLAB-like calls, so we can
+  just return a java object like it was an fid.
+
+----------------
+BIAC MR Toolbox:
+----------------
+mr/autodetectmr.m
+- Replace all uses of strfind with findstr (strfind doesn't exist before
+  Matlab 6.1).
+- Use 'DICOM' as the returned file type for DICOM files.
+- Add XCEDE as "BXH".
+- Now supports NIfTI-1 and compressed NIfTI-1.
+
+mr/bxhabsorb.m
+- Remove all dependencies on ispc and nargoutchk (for compatibility
+  with Matlab 5.3).
+- Assume case-insensitve filesystem on Macs.
+- Added note to help.
+
+mr/createmrstruct.m
+- Support logical arrays as input.
+- Choose the right byte order.
+
+mr/datarec2mrinfo.m
+- Standardize dimension field list and order.
+- Move from array of frag structures to frag list structure of arrays.
+- Preallocate and vectorize code to generate frags.  Approx 7 times faster
+  testing with 8000 files.
+- Fix index increment bug
+
+mr/getorientation.m
+- Remove all dependencies on ispc and nargoutchk (for compatibility
+  with Matlab 5.3).
+- Fix typo in description of RAS flag.
+
+mr/isroi.m
+- Bug Fix: form output not assigned for empty input roi.
+
+mr/mrinfo2datarec.m
+- Replace all uses of strfind with findstr (strfind doesn't exist before
+  Matlab 6.1).
+- Use info.frags fields correctly.
+- Fix a missing semicolon.
+
+mr/mrtest.m
+- Fixed typo in catch statement of local_safeeval().
+- Fix typo in error message.
+
+mr/orthooverlay.m
+- Changed argument checking to be more clear and robust.
+
+mr/orthoshowsrs.m
+- Changed argument checking to be more clear and robust.
+
+mr/overlay2.m
+- Use "new" readmr rather than readmrold.
+
+mr/readbxhhdr.m
+- Send explicit namespace declarations to readxml for XPath context.
+  Requires contemporary versions of readxml.c (1.36 or greater) or
+  readxml.m (1.4 or greater).
+- Don't call loadlocation unnecessarily.
+- Add support for XCEDE (from BIRN) files.
+- Deal better with missing data.
+- Don't remove rasorigin when converting from XCEDE to BXH.
+- Be a little more careful about digging into structs.
+
+mr/readmr.m
+- MANY updates.  Only important changes are listed below.
+- Added infoonly mode GUI example to help.
+- Replace all uses of strfind with findstr (strfind doesn't exist before
+  Matlab 6.1).
+- Remove all dependencies on ispc and nargoutchk (for compatibility with
+  Matlab 5.3).
+- Calculate output sizes / outputselectors correctly for permuted data.
+- More complete DICOM reading intelligence (and moved to helper function).
+- Prefix all local functions with "local_".
+- Standardize dimension field list and order.
+- Fix unreadchunksperdim calculation -- should be 1 for a dimension of size n
+  if the selector is [1:(n-1)].
+- Don't allow wildcards with 4-D Analyze files.
+- Perform filename slash conversion before reading frags.
+- Remove heading slash '/' from URL paths if on Windows.
+- Make sure all numeric DICOM fields are interpreted and stored as doubles
+- Move from array of frag structures to frag list structure of arrays.
+- NIfTI-1 and compressed NIfTI-1 updates
+- Clean up logic for deciding whether or not frag reads are using java
+  interface or not.
+
+mr/readmrgui.m
+- Add DICOM and DICOM_Search to file types.
+- Removed incorrect (and unnecessary) sprintf when creating error box title.
+- Use more robust version parsing code.
+- NIfTI-1 and compressed NIfTI-1 fixes for readmr and readmrgui
+
+mr/readmrhdr.m
+- Fixed error in error message generation.
+- Read all dimensions' origins!
+- Don't read SPM-specific fields (no one uses them).
+- Update documentation to remove SPM-specific values (which were removed in
+  the last revision).
+- NIFTI-1 support.
+- NIfTI-1 and compressed NIfTI-1 fixes for readmr and readmrgui
+
+mr/roi2mask.m
+- Remove MATLAB version dependency.  repmat performance is approximately the
+ same as using false and avoids the MATLAB version check.
+
+mr/roilimits.m
+- Make roilimitsgui a local function of roilimits.
+
+mr/roistats.m
+- Fix typo in error message.
+- Use "new" readmr rather than readmrold.
+
+mr/showsrs2.m
+- Use more robust version parsing code.
+- Automatically convert overlays to doubles before scaling.
+- Do automatic reorientation and flips before scaling/displaying
+  to save memory and annoyance (out-of-memory errors should now
+  happen before image is displayed).
+- Support some more orientations.
+- Add RAS labels to image display if orientation info is provided.
+- Added the ability to do delayed resampling of the data for large data
+  sets using DELAYINTERP input flag.
+- Implemented 2D clustering for overlays; also in showsrs2_cfg.
+- Added the ability to add and delete markers on the X-axis of the time
+  series plot.
+- Pass voxel size to "Specify Orientation" if it is defined in .info
+  field when slice orientation is not.
+
+mr/showsrs2_cfg.m
+- Implemented 2D clustering option for overlays
+
+mr/writemr.m
+- Added missing semicolon.
+- Remove main try-catch block since there is no progress bar to close.
+- When using NODATA option with one volume per file output, the
+  filerecordsize was incorrectly set to zero.  Use info struct to determine
+  dimensions instead of data field.
+- Removed unnecessary deal().
+- When using NODATA option, do not attempt to round data.
+- Standardize frags struct usage.
+
+-------------------------------------------------
+----- Changes from Version 3.0.10 to 3.0.11 ------
+-------------------------------------------------
+
+lib\iconv.dll
+lib\libxml2.dll
+- Removed lib directory and contents.  Use copy of libraries in
+  BIAC General Toolbox instead.
+
+-------------------
+BIAC EEGad Toolbox:
+-------------------
+EEGad\EEGRead.m
+- M-Lint: Make unused CVS variables comments for increased efficiency.
+- M-Lint: Remove unnecessary semicolon after function declarations.
+- M-Lint: Remove unnecessary commas after try, catch, and else statements.
+- Fixed error message string.
+
+EEGad\MIPRead.m
+- M-Lint: Make unused CVS variables comments for increased efficiency.
+- M-Lint: Remove unnecessary semicolon after function declarations.
+- M-Lint: Remove unnecessary commas after try, catch, and else statements.
+- Remove garbage after null terminated strings.
+- Cast uchars to chars when using sprintf to address MATLAB 7 warning.
+
+----------------
+BIAC MR Toolbox:
+----------------
+mr\dmdata2bxh.m
+- Use relative path name for dmdatafile in BXH file.
+
+mr\overlay2.m
+mr\overlay2_roitool.m	
+- M-Lint: Make unused CVS variables comments for increased efficiency.
+- M-Lint: Remove unnecessary semicolon after function declarations.
+- M-Lint: Remove unnecessary commas after try, catch, and else statements.
+- M-Lint: Replace deprecated isstr with ischar.
+- Use more robust version parsing code.
+
+mr\readmr.m
+- Simple fix to allow slightly different orientations in DICOM files.
+
+mr\roifix.m
+- M-Lint: Make unused CVS variables comments for increased efficiency.
+- M-Lint: Remove unnecessary semicolon after function declarations.
+- Save ROIs for MATLAB 5 & 6 compatibility when using MATLAB 7 and later.
+
+mr\showsrs2.m
+- Prompt user to load input if none specified.
+- Explicitly round on transparency calculations to avoid warning messages on
+  MATLAB 7.  Note: This change may decrease performance.
+- Added missing error call.
+- Use Refresh_Callback instead of Slider_Callback to refresh display.
+   Refresh_Callback function simpler.  The only other functionality used
+   was updating the time text to match the slider value.  Modified all
+   code that changes time slider to update text also.
+- Remove Slider_Callback and created separate (simpler) callback functions
+    for time and slice sliders.
+- Removed unused function ChangeSlice_Callback
+- Added local_updatemarker to handle changing the current spatial point in a
+    single location.  Modified KeyPress_Callback, SliceSlider_Callback, and
+    Click_Callback to use this function.
+- If user changes slices using keyboard after turning off markers with time
+    series plot on, do not reenable markers.
+- Added support for linking cursors.
+  - Renamed refreshPlotTimeSrs_Callback to RefreshPlotTimeSrs_Callback.
+  - Renamed showTimePlot_Callback to ShowTimePlot_Callback.
+  - Confirm that handle passed to callback is from a showsrs2 figure.
+- M-Lint: Make unused CVS variables comments for increased efficiency.
+- M-Lint: Remove unnecessary semicolon after function declarations.
+- M-Lint: Remove unnecessary commas after try, catch, and else statements.
+- M-lint: Add missing commas.
+- Changed argument checking to be more clear and robust.
+- Use more robust version parsing code.
+
+mr\showsrs2_cfg.m
+- Fix calculating histogram for logical array on MATLAB 6.5 and later.
+- Renamed refreshPlotTimeSrs_Callback to RefreshPlotTimeSrs_Callback.
+- M-Lint: Make unused CVS variables comments for increased efficiency.
+- M-Lint: Remove unnecessary semicolon after function declarations.
+- M-Lint: Remove unnecessary commas after try, catch, and else statements.
+
+mr\tstatprofile2.m
+- Josh Bizzell:
+  Added the ability to do temporal filtering; low-pass, high-pass, band-pass and stop band filters.
+  Added the option to remove intensity spikes.
+  Changed the output to return the parameters used to run the function in a struct.
+  Added the option to use the struct of parameters as an input.
+  Check to see if the automatic brain thresh hold detection returned too few voxels.
+  Added a bin count summary to print at end of function and log file.
+- Josh Bizzell: Fixed error when time points are to be excluded as requested by user.
+- Josh Bizzell: Fixed runTimePts bug introduced by previous fix.
+- M-Lint: Replace deprecated isstr with ischar.
+- M-Lint: Make unused CVS variables comments for increased efficiency.
+- M-Lint: Remove unnecessary semicolon after function declarations.
+- M-Lint: Remove unnecessary commas after try, catch, and else statements.
+
+mr\writemr.m
+- Remove all dependencies on ispc and nargoutchk (for compatibility
+  with Matlab 5.3).
+- Replace remaining strfind's.
+- Be a little more strict about putting fileoffset/fragsize in.
+- Fix frag size when there are multiple output data files.
+- Round before fwrite if writing floating-point data as integer data,
+  to standardize fwrite behavior between Matlab 6 (fix) and 7 (round).
+- M-Lint: Make unused CVS variables comments for increased efficiency.
+- M-Lint: Remove unnecessary semicolon after function declarations.
+- M-Lint: Remove unnecessary commas after try, catch, and else statements.
+
+-------------------------------------------------
+----- Changes from Version 3.0.9 to 3.0.10 ------
+-------------------------------------------------
+
+---------------------
+BIAC General Toolbox: 
+---------------------
+general\toexcel.m
+- Add support for MATLAB 7 COM changes.
+
+general\iconv.dll
+general\libxml2.dll
+- Put copy of libraries needed for xml MEX functions in
+  general toolbox.  MATLAB 7 will now search in current
+  directory for libraries needed by MEX DLLs.
+
+general\progbar.m
+- Mathworks suggested fix to MATLAB 7 text centering issue is not working
+  reliably.  Setting text units after setting title property appears to 
+  work well, through the reason it works is still unclear.
+
+----------------
+BIAC MR Toolbox:
+----------------
+mr\overlay2.m
+mr\overlay2_roitool.m
+- Save ROIs for MATLAB 5 & 6 compatibility when using MATLAB 7.
+
+mr\qastats2.m
+- Bug Fix: std images were being written with same precision as the input
+  images instead of being written as float32's.  Precision of output images
+  was likely too low for them to be useful.
+
+mr\roidef.m
+- Correct case of roipoly function call.
+
+-------------------------------------------------
+----- Changes from Version 3.0.8 to 3.0.9 -------
+-------------------------------------------------
+
+----------------
+BIAC MR Toolbox:
+----------------
+mr\showsrs2.m
+- Set legend text color to white (MATLAB 7 sets it to black by default).
+- Don't show option to send time series data to Excel except on PCs.
+- Use errordlg instead of errorbox.
+- Display coordinates of current point in original data.
+- Remove all dependencies on nargoutchk (for compatibility with Matlab 5.3).
+- Default to not use OpenGL. (Due to performance and rendering problems
+  for several graphics cards used at BIAC)
+
+-------------------------------------------------
+----- Changes from Version 3.0.7 to 3.0.8 -------
+-------------------------------------------------
+startup.m
+- Remove all dependencies on ispc and nargoutchk
+  (for compatibility with Matlab 5.3).
+- Generate fix directory names automatically.
+  (Don't warn if no BIAC Fix Toolbox.)
+
+-------------------
+BIAC EEGad Toolbox:
+-------------------
+EEGad\Contents.m
+- Modified Contents files so that toolbox name returned correctly by ver().
+
+--------------------------
+BIAC MATLAB53 Fix Toolbox:
+--------------------------
+fix\MATLAB53\Contents.m
+fix\MATLAB53\hist.m
+fix\MATLAB53\legend.m
+- Modified Contents files so that toolbox name returned correctly by ver().
+- Remove unnecessary functions hist.m and legend.m
+  Workarounds incorporated directly into relevant functions.
+
+-------------------------
+BIAC MATLAB60 Fix Toolbox:
+-------------------------
+fix\MATLAB53\Contents.m
+fix\MATLAB53\hist.m
+fix\MATLAB53\legend.m
+- Modified Contents files so that toolbox name returned correctly by ver().
+- Remove unnecessary functions hist.m and legend.m
+  Workarounds incorporated directly into relevant functions.
+
+-------------------------
+BIAC MATLAB61 Fix Toolbox:
+-------------------------
+fix\MATLAB53\Contents.m
+fix\MATLAB53\hist.m
+fix\MATLAB53\legend.m
+- Modified Contents files so that toolbox name returned correctly by ver().
+- Remove unnecessary functions hist.m and legend.m
+  Workarounds incorporated directly into relevant functions.
+
+--------------------------
+BIAC MATLAB65 Fix Toolbox:
+--------------------------
+fix\MATLAB53\Contents.m
+fix\MATLAB53\hist.m
+fix\MATLAB53\legend.m
+- Remove unnecessary functions hist.m and legend.m
+  Workarounds incorporated directly into relevant functions.
+- Removed Contents.m and deleted toolbox since there are no longer any
+  MATLAB 6.5 fixes.
+
+---------------------
+BIAC General Toolbox: 
+---------------------
+general\Contents.m
+- Modified Contents files so that toolbox name returned correctly by ver().
+
+general\progbar.m
+- Added note about moving progbar backwards.
+- MATLAB 7 revealed a issue with keeping text centered.  Based on Mathworks
+  tech support reponse, the units need to be normalized when setting 'XLim'
+  and 'YLim' to keep title centered.  Modified code to do this.
+
+----------------
+BIAC MR Toolbox:
+----------------
+mr\Contents.m
+- Modified Contents files so that toolbox name returned correctly by ver().
+
+mr\overlay2.m
+- Added work around for a Mathworks legend bug so that Mathworks
+  legend function does not have to be changed.
+
+mr\showsrs2_cfg.m
+- Calculate histogram using histc instead of hist.
+
+-----------------------------------------------
+----- Changes from Version 3.0 to 3.0.7 -------
+-----------------------------------------------
+
+-------------------
+BIAC EEGad Toolbox:
+-------------------
+EEGad\EEGFig.m
+- Changed color defaults so line colors are visible.
+
+--------------------------
+BIAC MATLAB53 Fix Toolbox:
+--------------------------
+fix\MATLAB53\Contents.m
+- Updated for patches.
+
+fix\MATLAB53\copyfile.m
+fix\MATLAB53\hist.m
+fix\MATLAB53\legend.m
+- Simplified documentation for minimal differences from Mathworks originals.
+
+fix\MATLAB53\false.m
+fix\MATLAB53\isequalwithequalnans.m
+fix\MATLAB53\true.m
+- Implemented these MATLAB 6.5 built-in functions for MATLAB 5.3
+- Updated documentation for consistency among fix functions.
+
+fix\MATLAB53\hist.m
+- Modified to support non-double numeric classes.
+
+fix\MATLAB53\ismember.m
+fix\MATLAB53\@cell\ismember.m
+- Removed.
+- The changes to ismember changed the functionality from the original 
+  Mathworks versions.  In particular trailing blanks were significant
+  in the "fix" versions of these functions.  Other changes undocumented
+  changes may have also been made, however the details of these changes
+  are unknown.  The new functionality is not required by the BIAC MALTAB
+  toolboxes, so these changes will not be included to decrease the
+  maintenance required as new versions of MATLAB are released and to avoid
+  potential problems with other software due to the changed functionality.
+
+fix\MATLAB53\ispc.m
+fix\MATLAB53\nargoutchk.m
+- Replace Mathworks source code with clean implementation.
+- Updated documentation for consistency among fix functions.
+
+fix\MATLAB53\strfind.m
+- Updated documentation for consistency among fix functions.
+
+-------------------------
+BIAC MATLAB60 Fix Toolbox:
+-------------------------
+fix\MATLAB60\copyfile.m
+fix\MATLAB60\hist.m	
+fix\MATLAB60\legend.m
+- Simplified documentation for minimal differences from Mathworks originals.
+
+fix\MATLAB60\false.m
+fix\MATLAB60\true.m
+- Updated help
+- Updated documentation for consistency among fix functions.
+
+fix\MATLAB60\isequalwithequalnans.m
+- Tested and commented on ISEQUAL behavior in older MATLAB versions.
+- Updated documentation for consistency among fix functions.
+
+fix\MATLAB60\strfind.m
+Updated documentation for consistency among fix functions.
+
+-------------------------
+BIAC MATLAB61 Fix Toolbox:
+-------------------------
+fix\MATLAB61\copyfile.m
+fix\MATLAB61\hist.m	
+fix\MATLAB61\legend.m
+- Simplified documentation for minimal differences from Mathworks originals.
+
+fix\MATLAB61\false.m
+fix\MATLAB61\true.m
+- Updated help
+- Updated documentation for consistency among fix functions.
+
+fix\MATLAB61\isequalwithequalnans.m
+- Tested and commented on ISEQUAL behavior in older MATLAB versions.
+- Updated documentation for consistency among fix functions.
+
+--------------------------
+BIAC MATLAB65 Fix Toolbox:
+--------------------------
+fix\MATLAB65\Contents.m
+- Corrected typo.
+
+fix\MATLAB65\hist.m	
+fix\MATLAB65\legend.m
+- Simplified documentation for minimal differences from Mathworks originals.
+
+---------------------
+BIAC General Toolbox: 
+---------------------
+general\buildmex.bat
+general\buildmex.sh
+general\buildmex.m
+- Compile cellfun2 with and without logical type support using two different
+  output names instead of placing the MEX files into the fix directories.
+- Display correct defaults in usage. (.bat)
+- Remove all dependencies on ispc and nargoutchk (for compatibility
+  with Matlab 5.3). (.m)
+
+general\cellfun2.c
+- Fixed MATLAB test code in comments to test and handle empty cells properly.
+
+general\cellfun2.m
+- Implement as m-file
+- Compile cellfun2 with and without logical type support using two different
+  output names instead of placing the MEX files into the fix directories.
+- Modify to handle calling the correct MEX file.
+
+general\listgui.m
+- Added support for multiple selections.
+
+general\makedir.m
+- Bug Fix: Set status properly on failure.
+
+general\private\grablocation.m
+- Make sure temp file is not a directory.
+
+----------------
+BIAC MR Toolbox:
+----------------
+mr\overlay2.m
+- Bug Fix: Extract data field from correct variable for second overlay.
+
+mr\readmrgui.m
+- Update error messages.
+
+mr\readmrhdr.m
+- Replace SPM code for reading Analyze7.5_SPM headers with clean implementation.
+- Force to three dimensions if dims > 3 are singular.
+- Fixed typos in handling big-endian Analyze7.5_SPM format.
+- Fixed typo in error message string creation.
+
+mr\tstatprofile2.m
+- Creates output folder if it does not exist.
+- Use isunix for MATLAB 5.3 compatibility.
+
+-----------------------------------------------------
+----- Changes from Version 2.2 patched to 3.0 -------
+-----------------------------------------------------
+All .m files
+- Make some CVS info accessible through variables
+
+startup.m
+- Added support for separate 6.0 and 6.1 fix toolboxes
+
+startup-stub.m
+- Changed default installation location for UNIX systems
+
+-------------------
+BIAC EEGad Toolbox:
+-------------------
+EEGad\Contents.m
+- Updated for new version
+
+--------------------------
+BIAC MATLAB53 Fix Toolbox:
+--------------------------
+fix\MATLAB53\Contents.m
+- Updated for new version
+
+fix\MATLAB53\strfind.m
+- Implemented this MATLAB 6.1 built-in function for MATLAB 5.3
+
+fix\MATLAB53\nargoutchk.m
+- Implemented this MATLAB 6.0 function for MATLAB 5.3
+  (Just a copy of MATLAB 6.5 function)
+
+-------------------------
+BIAC MATLAB6 Fix Toolbox:
+-------------------------
+Replaced by separate versions for MATLAB 6.0 and 6.1
+
+fix\MATLAB6\ismember.m
+fix\MATLAB6\@cell\ismember.m
+- Removed.  
+- The changes to ismember changed the functionality from the original 
+  Mathworks versions.  In particular trailing blanks were significant
+  in the "fix" versions of these functions.  Other changes undocumented
+  changes may have also been made, however the details of these changes
+  are unknown.  The new functionality is not required by the BIAC MALTAB
+  toolboxes, so these changes will not be included to decrease the
+  maintenance required as new versions of MATLAB are released and to avoid
+  potential problems with other software due to the changed functionality.
+
+--------------------------
+BIAC MATLAB60 Fix Toolbox:
+--------------------------
+fix\MATLAB60\Contents.m
+- Updated for toolbox changes.
+
+fix\MATLAB60\copyfile.m
+fix\MATLAB60\hist.m
+fix\MATLAB60\legend.m
+- Applies same patches from fix\MATLAB6 to original MATLAB 6.0 versions of functions.
+- copyfile & hist are identical to MATLAB 6.1 versions except for comments.
+- Original legend.m file is different than MATLAB 6.1 version.
+
+fix\MATLAB60\false.m
+fix\MATLAB60\isequalwithequalnans.m
+fix\MATLAB60\true.m
+- Implemented these MATLAB 6.5 built-in functions for MATLAB 6.0
+
+fix\MATLAB60\strfind.m
+- Implemented this MATLAB 6.1 built-in function for MATLAB 6.0
+
+--------------------------
+BIAC MATLAB61 Fix Toolbox:
+--------------------------
+fix\MATLAB61\Contents.m
+- Updated for toolbox changes.
+
+fix\MATLAB61\copyfile.m
+fix\MATLAB61\hist.m
+fix\MATLAB61\legend.m
+- Applies same patches from fix\MATLAB6 to original MATLAB 6.1 versions of functions.
+
+fix\MATLAB61\false.m
+fix\MATLAB61\isequalwithequalnans.m
+fix\MATLAB61\true.m
+- Implemented these MATLAB 6.5 built-in functions for MATLAB 6.1
+
+--------------------------
+BIAC MATLAB65 Fix Toolbox:
+--------------------------
+fix\MATLAB65\Contents.m
+- Updated for toolbox changes.
+
+---------------------
+BIAC General Toolbox: 
+---------------------
+general\@url\eq.m
+general\@url\get.m
+general\@url\toString.m
+general\@url\url.m
+general\filename2url.m
+- Implemented URL class and related functions
+
+general\buildmex.m
+general\buildmex.sh
+general\buildmex.bat
+- Implemented buildmex as a UNIX shell script and DOS batch file
+- Changed default libxml version on Windows to 2.5.10
+- Don't need to link against libz on UNIX.
+- Code simplification & comment changes.
+- Compile writexml.c instead of writexml.cpp
+- Change default path for external libraries to \\Gall\Source
+- Added ability to specify libxml2 & iconv version on Windows.
+- Added catch to move back to original directory on error.
+- Added building private\deleteonclose.c
+
+general\fopenlocation.m
+general\loadlocation.m
+general\private\deleteonclose.c
+general\private\deleteonclose.m
+general\private\deleteoncloseacq.m
+general\private\deleteoncloserel.m
+general\private\grablocation.m
+- New functions to open and read data described by URLs
+
+general\xpathquery.m
+- New function to perform XPath query on structure read by readxml
+
+general\cellfun2.c
+general\cellfun2.m
+- Removed a couple of extra variables & added test code to comments.
+- Removed revision history from help stub m-file (better history in C source file)
+
+general\cmapmenu.m
+- Capitalization change in function name
+
+general\Contents.m
+- Updated for toolbox changes.
+
+general\dcmtkdic2matlabdic.m
+- Support ranges & minor bug fix.
+
+general\findexp.m
+- same changes as 2.2 patches
+
+general\hcoords.m
+- Removed revision history from help stub m-file (better history in C source file)
+
+general\minmax.m
+- Only issue mex warning once
+
+general\normaliz.m
+- Capitalization change in comments
+
+general\progbar.m
+- Added support for operation without a display.
+  Pretend screen is 640x480 for calculations.
+  Don't ask question when closing progbar.
+- Use rectangle instead of patch and to calculations in pixels to fix overwriting axes (again!).
+- Removed use of DEAL for better performance.
+
+general\readxml.c
+general\readxml.m
+general\writexml.c (replaces general\writexml.cpp)
+- New way to maintain order of XML nodes when they are added
+  or deleted.  XML structure is changed to support this, see
+  fillXmlNode in writexml.c for description.
+- Now can be compiled with a C compiler (rather than C++)
+
+general\scaled2rgb.c
+- Bug fix: Was not checking bounds of cmap(1)
+
+general\scaled2rgb.m
+- Only issue warning to compile MEX file once.
+
+general\toexcel.m
+- Replace empty cells in data with empty strings (Prevents segmentation fault)
+
+general\trilinear.c
+- Minor bug fix for better performance.
+- Removed revision history from help stub m-file (better history in C source file)
+
+----------------
+BIAC MR Toolbox:
+----------------
+mr\Contents.m
+- Updated for toolbox changes.
+
+Replaced\Rewrote:
+mr\readmr.m
+mr\readmrgui.m
+mr\readmrold.m (Do NOT use)
+mr\writemr.m
+- readmr, readmrgui, and writemr rewritten for BXH support
+- writemr is fully backwards compatible with old version.
+- readmr does not implement the following syntaxes from the old version:
+    [srs,name,params]=readmr;
+    [name,params]=readmr('Params',...);
+    [name,params]=readmr('Params;<dir>',...);
+    readmr help
+    [params]=readmr('help',cannedFormat);
+    [srs,name,params]=readmr(fName,cannedFormat); % For format with a header
+- The old version of readmrgui.m was incorporated into the old version of
+  readmr.m and the result was renamed readmrold.m for use in overlay2,
+  cropmr, and cropmrexam.  Note that readmrold should not be used in any
+  functions outside the BIAC MR Toolbox and may be removed in future software
+  releases.
+
+mr\readmrhdr.m
+- Changes to Analyze7.5_SPM code
+  - Use persistent instead of global variables.
+  - Issue an error if header does not exist instead of using global defaults.
+  - Determine correct byte order.
+- Added support for SignaXIMG (E*S*I*) format.
+- Number of Images Existing (GE series header se_numimages,
+  DICOM GEMS:ImagesInSeries) may be more reliable for number
+  of slices (slquant is sometimes larger than number of slices).
+
+mr\readtsv.m
+mr\writetsv.m
+- DEPRECATED functions.  Use readtsv and writetsv instead
+- Updated for new readmr.m and writemr.m
+
+New:
+mr\private\typespec2str.m
+mr\autodetectmr.m
+mr\convertmrstructtobxh.m
+mr\createmrstruct.m
+mr\datarec2mrinfo.m
+mr\mrinfo2datarec.m
+- New functions to support new readmr and writemr
+
+mr\bxhabsorb.m
+mr\dmdata2bxh.m
+mr\getbounds.m
+mr\getorientation.m
+mr\ras2direction.m
+mr\readbxhdata.m
+mr\readbxhhdr.m
+mr\reorient.m
+mr\transformras.m
+- New BXH related functions
+
+mr\tstatprofile2.m (BXH enabled)
+- BXH enabled new version of tstatprofile2 
+
+Changed: 
+mr\cropmr.m (NOT BXH enabled)
+mr\cropmrexam.m (NOT BXH enabled)
+- Changed readmr and writemr to lowercase.
+- Changed to use readmrold
+
+mr\fftmr.m
+mr\orthoshowsrs.m
+mr\splinealigntsv.m
+- Updated help to use new readmr.
+
+mr\isdicom.m
+- Added check for valid dataset w/o the \0\0\0...\0DICM header.
+
+mr\mrtest.m (BXH Enabled)
+- Updated for new readmr and writemr
+  - Use typeSpecs instead of x,y,z,dataTypes,nTimePts in command line version.
+  - Use RunTypeSpec instead of XPixels, YPixels, ZPixels, TimePts, RunDataType in control files.
+  - Implemented backwards compatiblity layer.
+  - Write BXH headers with output.
+  - Use .img file extensions for all outputs.
+  - Include revision information in log file.
+  - Check that all runs have the same dimensions structure.
+  - Create BXH history entry similar to logfile.
+  - Check for empty bins before calculating any epoch averages to create full
+      BXH history entry for all bins written.
+- Write each epoch time course with a single writemr call (instead of writing each volume one-by-one.)
+- Wrote help section with detailed description of input arguments and control file format.
+- Don't call name2spec for each runName (assume user included any desired *s)
+
+mr\name2spec.m
+- Support striping numeric extensions (i.e. Signa5 I.* images).
+
+mr\orthoshowsrs2.m
+- Removed.  Functionality now integrated into showsrs2.m
+
+mr\overlay2.m (NOT BXH enabled)
+- Use readmrold.m
+- Pull images out of .data fields of command line inputs if necessary.
+
+mr\qastats2.m (BXH Enabled)
+- Process by slice & time point if there is not enough memory available.
+- Remove non-directory run matches.
+- Added support for new readmr and writemr.
+- Search for BXH files when BXH typespec specified.
+- Write STD volumes with BXH header.
+
+mr\roistats.m (BXH Enabled)
+- Updated to use new READMR.  Use typeSpec instead of params.
+- Added support for zooms.
+
+mr\showsrs.m
+- Updated help to use new readmr.
+- Change numbering of X-axis time series plot to start at one to match the
+  time series numbering in the main window.
+- Added Mean/Std to time series plot stats.
+
+mr\showsrs2.m
+mr\showsrs2_cfg.m (.fig removed)
+mr\showsrs2_cfgtrans.m
+- Updated help to use new readmr.
+- Added config option "showTimePlot".
+- Remember which lines are shown on time plot when axis deleted and recreated.
+- Apply flips in the 3rd dimension automatically for 'lpi' orientation.
+- Label figure with image or variable names when available.
+- Made configuration input arguments optional.
+- Removed support for passing base cmapLim as a simple vector (not a struct).
+- Use warndlg for most warnings to make them more apparent to user.
+- Close GUI on error if possible.
+- Bug Fix: Slice change now updates time series plot in single axes view
+- Added "m" key to echo current point to command window.
+- Add ability to specify slicePlane and voxelSize after data is loaded in GUI.
+- Use feval to generate default colormaps.  Comment updates.
+- Fixed enabling/disabling time series plot in separate figure.
+- Implemented MATLAB 5.3 support
+  - Implemented transparency merge in showsrs2 display function.
+  - Removed all guihandles, getappdata, setappdata calls.
+  - Use painters renderer and double buffering when not using OpenGL Transparency.
+- Added menu to turn off/on OpenGL transparency.  
+- Added menu to flipdim after data are loaded.
+- Change numbering of X-axis time series plot to start at one to match the
+    time series numbering in the main window.
+- Added auto detection of slicePlane and voxelSize from info field.
+- Fixed check for data field in overlays.
+
+mr\splinealignmr.m (BXH Enabled)
+- NOTE: Changed default output pixel type to be the same the input. (Default was float before!)
+- Updated to use new readmr.
+- Support BXH inputs.
+- Changed params to typeSpec.
+- Added backward compatibility if params is input instead typeSpec.
+- Use writemr for writing output.
+- Added optional variable to specify output filenames.
+- Write BXH headers with output. (Including detailed history entry)
+- Read TR from BXH header if possible.
+- Require fewer inputs (many are unnecessary with BXH).
+
+mr\tstatprofile.m
+- Just fixes already in 2.2 patched
+
+mr\vol2montage.m
+- Support non-square and user specified montSz.
+- Reduce auto-calculated vertical size of montage if possible.
+
+-----------------------------------------------------
+----- Changes from Version 2.2 to 2.2 patched -------
+-----------------------------------------------------
+startup.m
+startup-stub.m
+- Changed default location of installation from Broca to Gall
+
+-------------------
+BIAC EEGad Toolbox:
+-------------------
+EEGad\chanArea.m
+EEGad\chanAvg.m
+EEGad\checkBins.m
+EEGad\EEGRead.m
+EEGad\EEGTweak.m
+EEGad\hodad.m
+- Corrected capitalization of several function call.
+
+--------------------------
+BIAC MATLAB53 Fix Toolbox:
+--------------------------
+none.
+
+-------------------------
+BIAC MATLAB6 Fix Toolbox:
+-------------------------
+none.
+
+--------------------------
+BIAC MATLAB65 Fix Toolbox:
+--------------------------
+none.
+
+---------------------
+BIAC General Toolbox: 
+---------------------
+general\unc2unix.m (new function)
+- Converts Windows UNC paths to UNIX paths assuming that a particular 
+  convention is used for the server mount points.
+
+general\findexp.m
+- Updated to use experiment databases on Huxley instead of Bristol.
+- Experiments that have multiple experiment directories will return
+  the last entry in the experiment databases.
+- Updated to support UNIX systems.
+
+----------------
+BIAC MR Toolbox:
+----------------
+mr\tstatprofile.m
+- Bug Fix: Fixed bug when reading multi-digit bin numbers in the BinsTest
+  field of the control file.  Prevous attempts to compare bins with
+  multi-digit bin numbers (i.e. "12", "214", etc) using the old version would 
+  have caused tstatprofile to crash or the desired compasisons would have been
+  missing from the output.  Note that the problem only effected the BinsTest 
+  field, not the Bins field of the control file.
+- Changed handling of NaN values.  Now converts NaN values to zero when
+  calculating grand average and standard deviation volumes.
+- Fixed capitalization problems.
+
+mr\overlay2.m
+- Bug Fix: Fixed loading multiple ROIs without val fields using 'LoadROIs'.
+- Bug Fix: Fix base size checking when loading ROIs on single slice images.
+- Check type and ndims of input images.
+
+mr\readmr.m
+- Bug Fix: Don't attempt to read the header when using the paramsOnly mode
+  since the "fName" is actually the default directory.
+
+-----------------------------------------------
+----- Changes from Version 2.1.1 to 2.2 -------
+-----------------------------------------------
+
+startup.m
+- Only add KS toolbox if it exists.
+- Remove FaceHiLo toolbox.
+- Added default installation directory for UNIX.
+- colordef none removed.
+
+startup-stub.m
+- Added default installation directory for UNIX.
+
+-------------------
+BIAC EEGad Toolbox:
+-------------------
+
+EEGad\Contents.m
+- Created Contents file for BIAC EEGad Toolbox.
+
+EEGad\info.xml
+- Created info.xml file for BIAC EEGad Toolbox.
+
+--------------------------
+BIAC MATLAB53 Fix Toolbox:
+--------------------------
+
+fix\MATLAB53\Contents.m
+- Updated for toolbox changes.
+
+fix\MATLAB53\ispc.m
+- New function based on MATLAB 6.1 version.
+
+-------------------------
+BIAC MATLAB6 Fix Toolbox:
+-------------------------
+
+fix\MATLAB6\Contents.m
+- Updated for toolbox changes.
+
+fix\MATLAB6\hist.m
+- Modified to support non-double numeric classes.
+
+--------------------------
+BIAC MATLAB65 Fix Toolbox:
+--------------------------
+
+fix\MATLAB65\Contents.m
+- Updated for toolbox changes.
+
+fix\MATLAB65\hist.m
+- Modified to support non-double numeric classes.
+
+---------------------
+BIAC General Toolbox: 
+---------------------
+general\Contents.m
+- Updated for toolbox changes.
+
+general\buildmex.m
+- Use fully qualified UNC paths.
+- Better handling of missing libraries.
+
+general\facehilo.m
+- Removed FaceHiLo "Toolbox".
+  - pcxread2.m & pcxwrit2.m removed (no longer necessary in
+    current versions of MATLAB).
+  - Moved facehilo.m to general toolbox.
+- Misc fixes and enhancements.
+
+general\findexp.m
+- Comment update.
+
+general\hcoords.c
+- Comment update.
+
+general\info.xml
+- Created info.xml file for BIAC General Toolbox.
+
+general\readxml.c
+- Better namespace handling.
+- Add BASE field.
+- Add support for comments.
+- Misc fixes and enhancements.
+
+general\scale3.m
+- Fixed check for integer scale factors.
+
+general\trilinear.c
+- Comment update.
+
+general\writexml.cpp
+- Better namespace handling.
+- Handle BASE field.
+- Add support for comments.
+
+----------------
+BIAC MR Toolbox:
+----------------
+mr\Contents.m
+- Updated for toolbox changes.
+
+mr\info.xml
+- Created info.xml file for BIAC MR Toolbox.
+
+mr\mrpolyfit.m
+- Added support for user specified regressor.
+
+mr\mrtest.m
+- Added ability to specify an output directory (and 
+  write results) using command line version.
+
+mr\overlay2.m
+mr\overlay2_roitool.fig
+mr\overlay2_roitool.m
+mr\overlaygui.m
+mr\roicurrent.m
+mr\roidef.m
+mr\roigrow.m
+- Integrated roi drawing tools.
+- Provide menu item for roi loading tool (if beta version present)
+  NOT included in release 2.2 since function is not done.
+- Allow interpolation in slice direction when calculating roistats.
+- Added close request function to automatically close related GUIs.
+- Make sure base size is a three element vector. (mr\roidef.m)
+- Stats Button: Fixed storing & using savedBasePath/Params/Zoom.
+- Stats Button: Cache last selected runs & give user option to use them.
+
+mr\qastats2.m
+- Better memory managment.
+- Only process V*.img files (not *V*.img files).
+
+mr\readmrhdr.m
+- MATLAB 6.5 support changes.
+- Allow specifying hdr or image file.
+
+mr\roi2ind.m
+- New function.
+
+mr\roi2mask.m
+- Changed output mask to a logical mask.
+- Simplified code.
+
+mr\roistats.m
+Added support for interpolation in the slice direction.
+Bug fix: Zoom was not being applied.
+Use the actual scale factors in x & y.
+
+mr\showsrs.m
+- Extract images from data field of input.
+
+mr\showsrs2.m
+mr\showsrs2_cfg.m
+- Automatically interpolate overlay2 in the slice direction.
+- Extract images from data field of input.
+- Optionally use colormap to chose time series plot line color.
+- Added passing default transparency.
+- Added support for non-double numeric arrays.
+- Added menu to turn plotting of time series for each overlay on/off.
+- Added contextual menus to copy data from time series plot lines.
+- Added contextual menu to change color & style of crosshairs.
+- Misc fixes & enhancements.
+
+mr\splinealignmr.m
+- Added optional output format field.
+
+mr\tstatprofile.m
+mr\findparadigmevents.m
+mr\readparadigm.m
+- Moved tstatprofile & related functions into MR toolbox 
+  and put under revision control.
+
+--------------------------------
+Removed the following functions:
+--------------------------------
+general\deleteonclose.c
+general\deleteonclose.m
+general\fopenlocation.m
+general\geturifromfile.m
+general\grablocation.m
+general\loadlocation.m
+general\readxmlimagedata.m
+mr\readtsv1.m
+mr\showbxh.m
+mr\writetsv1.m
+
+-----------------------------------------------
+------ Changes from Version 2.1 to 2.1.1 ------
+-----------------------------------------------
+
+-------------------
+BIAC EEGad Toolbox:
+-------------------
+none.
+
+--------------------------
+BIAC MATLAB53 Fix Toolbox:
+--------------------------
+none.
+
+-------------------------
+BIAC MATLAB6 Fix Toolbox:
+-------------------------
+none.
+
+--------------------------
+BIAC MATLAB65 Fix Toolbox:
+--------------------------
+none.
+
+---------------------
+BIAC General Toolbox: 
+---------------------
+general\chexp.m
+- Better check for access to directory contents.
+- Don't require Scripts directory.
+
+general\findexp.m
+- Use experiment databases on Bristol.
+- Added support for multiple experiment databases.
+- Added caching of experiment names and paths.
+- Better check for access to directory contents.
+- Misc fixes and enhancements.
+
+general\listgui.m
+- Optionally return the index into the list of the item chosen.
+
+----------------
+BIAC MR Toolbox:
+----------------
+none.

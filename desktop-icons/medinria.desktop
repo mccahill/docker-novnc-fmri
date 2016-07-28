@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=MedInria
+Comment=MedInria mathematics application
+Exec=/mri/scripts/start-medinria
+Icon=leafpad
+Terminal=false
+Type=Application
+Categories=Education;Mathematics;

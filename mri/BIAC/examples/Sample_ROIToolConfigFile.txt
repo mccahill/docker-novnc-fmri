@@ -1,0 +1,83 @@
+% Sample Configuration file for overlay2 ROI Drawing Tool
+%
+% This is a sample configuration file for use with the
+% ROI Drawing TOol in overlay2.
+%
+% Type "help overlay2_roitool" for the configuration file format.
+%
+
+% --- ROI Names (REQUIRED) ---
+% Full ROI names
+ARFULL=ACG-anterior cingulate gyrus
+ARFULL=CER-cerebellum
+ARFULL=CUN-cuneus
+ARFULL=FFG-fusiform gyrus
+ARFULL=FMS-frontomarginal sulcus
+ARFULL=IFG-inferior frontal gyrus
+ARFULL=IPS-intraparietal sulcus
+ARFULL=ITS-inferior temporal sulcus
+ARFULL=ITG-inferior temporal gyrus
+ARFULL=LOG-lateral occipital gyrus
+ARFULL=LOS-lateral orbital sulcus
+ARFULL=MFG-middle frontal gyrus
+ARFULL=MOG-medial orbital gyrus
+ARFULL=MOT-primary motor area
+ARFULL=MTG-middle temporal gyrus
+ARFULL=OFG-orbitofrontal gyrus
+ARFULL=PCG-precentral gyrus
+ARFULL=PCS-precentral sulcus
+ARFULL=POS-parieto occipital sulcus
+ARFULL=SFG-superior frontal gyrus
+ARFULL=SFS-superior frontal sulcus
+ARFULL=SMA-supplementary motor area
+ARFULL=SMG-supramarginal gyrus
+ARFULL=SPL-superior parietal lobule
+ARFULL=STG-superior temporal gyrus
+ARFULL=STS-superior temporal sulcus
+ARFULL=TOS-temporo occipital sulcus
+ARFULL=WHM-white matter
+
+% Buttons for quickly saving ROIs
+ARHOT=ACG
+ARHOT=CER
+ARHOT=FFG
+ARHOT=IFG
+ARHOT=IPS
+ARHOT=MFG
+ARHOT=MOT
+ARHOT=SFG
+ARHOT=SMA
+ARHOT=STS
+ARHOT=WHM
+
+% --- Other Options (OPTIONAL) ---
+% Automatically determine exam number? (0-no,1-yes)
+AutoExam=0
+
+% Default exam number (ignored if AutoExam is on)
+ExamNumber=1
+
+% Automatically determine slice number? (0-no,1-yes)
+AutoSlice=1
+
+% Default slice number (ignored if AutoSlice is on)
+SliceNumber=1
+
+% Default orientation (1-none,2-axial,3-coronal,4-saggital)
+Orientation=1
+
+% Use the same limits for drawing next ROI as used for drawing last ROI (0-no,1-yes)
+SameLimits=1
+
+% Default Hemisphere (1-none,2-right,3-left)
+Hemisphere=1
+
+% Automatically start defining a new ROI after saving an ROI? (0-no,1-yes)
+AutoDefine=0
+
+% Default path to save ROIs in.
+% currentExperimentPath\Analysis\ROI used if not specified here
+%SavePath=D:\Scratch\foo.01\analysis\02201\ROI
+
+% String evaluated using eval() to generate ROI filename
+%ROIFilenameFunction=strcat(orientation,region,hemisphere,'_',exam,'_','s',slice,'.roi');

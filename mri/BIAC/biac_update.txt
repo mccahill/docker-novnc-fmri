@@ -1,0 +1,66 @@
+Instructions on how to update releases to the BIAC tools.
+
+(1) Set your CVSROOT environment variable to the CVS repository root: \\Munin\Data\Programs\Source\CVSRepo
+  set CVSROOT=\\Munin\Data\Programs\Source\CVSRepo
+
+(2) Make a working directory for MATLAB source.
+  mkdir /my/working/matlab
+
+(3) Check out the latest branch of the MATLAB source.
+  cd /my/working/matlab
+  cvs checkout -r matlab-3-1-4-1 matlab
+  [Doesn't work??]
+
+(4) Make sure all desired changes are committed to CVS.
+  cvs commit -m "Update description" file.m
+  [Is this right?]
+
+(5) Choose a new version number NEWVERS (e.g. 3.1.4.2), and update
+VersionHistory.txt to include entries of interest for the new version.
+You can get a diff from the previous release or a particular date from
+CVS like this:
+
+  cd /my/working/matlab
+  cvs diff -b -u -r OLDTAG
+  cvs diff -b -u -D OLDDATE
+
+where OLDTAG is something like matlab-3-1-4-1 or OLDDATE is something like
+'2008/03/25'.  The -b option ignores differences in newlines (UNIX vs.
+Windows).
+
+(6) Commit VersionHistory.txt to CVS.
+
+  cd /my/working/matlab
+  cvs commit -m "Update version history" VersionHistory.txt
+
+(7) Tag the CVS tree with the new version number.  The CVS tag is
+matlab-TAGVERS, where TAGVERS is the same as NEWVERS with any dots replaced
+with dashes (e.g. matlab-3-1-4-2).  Here is how you tag:
+
+  cd /my/working/matlab
+  cvs tag matlab-3-1-4-2
+
+If you accidentally forgot to commit something and need to update the tag
+for a file, you can "force" re-tagging like this:
+
+  cvs tag -F matlab-3-1-4-2 [optional file list...]
+
+(8) Now update the standard location (\\Munin\Data\Programs\MATLAB\BIAC)
+with the changes by either copying the updated files (in most cases this is
+the easiest option) or re-checking out a fresh copy based on the tag:
+
+  cd /temporary/directory
+  cvs -d ~/net/munin/data/Source/CVSRepo checkout -r matlab-3-1-4-2 matlab
+  
+and then copying it to ~/net/munin/data/Programs/MATLAB/BIAC.
+
+(9) Now go to munin/data/Programs/MATLAB and copy the BIAC directory into
+a new directory with a date and version label, zip it up, and copy it to
+BIAC_matlab_latest.zip:
+
+  cd ~/net/munin/data/Programs/MATLAB
+  cp -r BIAC BIAC_matlab_20090423_ver3.1.4.2
+  zip -r BIAC_matlab_20090423_ver3.1.4.2.zip BIAC_matlab_20090423_ver3.1.4.2
+  cp BIAC_matlab_20090423_ver3.1.4.2 BIAC_matlab_latest.zip
+
+All done!

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=MRIcron
+Comment=MRIcron mathematics application
+Exec=/mri/mricron_lx/mricron
+Icon=leafpad
+Terminal=false
+Type=Application
+Categories=Education;Mathematics;

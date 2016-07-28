@@ -1,0 +1,55 @@
+PREFIX=/srv/persistent-data/homedirs
+cp -r ubuntu-home-template $PREFIX/user100/
+cp -r ubuntu-home-template $PREFIX/user101/
+cp -r ubuntu-home-template $PREFIX/user102/
+cp -r ubuntu-home-template $PREFIX/user103/
+cp -r ubuntu-home-template $PREFIX/user104/
+cp -r ubuntu-home-template $PREFIX/user105/
+cp -r ubuntu-home-template $PREFIX/user106/
+cp -r ubuntu-home-template $PREFIX/user107/
+cp -r ubuntu-home-template $PREFIX/user108/
+cp -r ubuntu-home-template $PREFIX/user109/
+
+cp -r ubuntu-home-template $PREFIX/user110/
+cp -r ubuntu-home-template $PREFIX/user111/
+cp -r ubuntu-home-template $PREFIX/user112/
+cp -r ubuntu-home-template $PREFIX/user113/
+cp -r ubuntu-home-template $PREFIX/user114/
+cp -r ubuntu-home-template $PREFIX/user115/
+cp -r ubuntu-home-template $PREFIX/user116/
+cp -r ubuntu-home-template $PREFIX/user117/
+cp -r ubuntu-home-template $PREFIX/user118/
+cp -r ubuntu-home-template $PREFIX/user119/
+
+cp -r ubuntu-home-template $PREFIX/user120/
+cp -r ubuntu-home-template $PREFIX/user121/
+cp -r ubuntu-home-template $PREFIX/user122/
+cp -r ubuntu-home-template $PREFIX/user123/
+cp -r ubuntu-home-template $PREFIX/user124/
+cp -r ubuntu-home-template $PREFIX/user125/
+cp -r ubuntu-home-template $PREFIX/user126/
+cp -r ubuntu-home-template $PREFIX/user127/
+cp -r ubuntu-home-template $PREFIX/user128/
+cp -r ubuntu-home-template $PREFIX/user129/
+
+cp -r ubuntu-home-template $PREFIX/user130/
+cp -r ubuntu-home-template $PREFIX/user131/
+cp -r ubuntu-home-template $PREFIX/user132/
+cp -r ubuntu-home-template $PREFIX/user133/
+cp -r ubuntu-home-template $PREFIX/user134/
+cp -r ubuntu-home-template $PREFIX/user135/
+cp -r ubuntu-home-template $PREFIX/user136/
+cp -r ubuntu-home-template $PREFIX/user137/
+cp -r ubuntu-home-template $PREFIX/user138/
+cp -r ubuntu-home-template $PREFIX/user139/
+
+cp -r ubuntu-home-template $PREFIX/user140/
+cp -r ubuntu-home-template $PREFIX/user141/
+cp -r ubuntu-home-template $PREFIX/user142/
+cp -r ubuntu-home-template $PREFIX/user143/
+cp -r ubuntu-home-template $PREFIX/user144/
+cp -r ubuntu-home-template $PREFIX/user145/
+cp -r ubuntu-home-template $PREFIX/user146/
+cp -r ubuntu-home-template $PREFIX/user147/
+cp -r ubuntu-home-template $PREFIX/user148/
+cp -r ubuntu-home-template $PREFIX/user149/

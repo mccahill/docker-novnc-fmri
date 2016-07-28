@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<history>
+<session>
+<command time_stamp="14a798fcc8a">%-- 12/23/14 11:51:15 PM --%</command>
+<command batch="1" repeat="2">x = -2:0.25:2;</command>
+<command batch="1">[X,Y] = meshgrid(x);</command>
+<command batch="1">Z = X.*exp(-X.^2-Y.^2);</command>
+<command batch="1" execution_time="107">contour3(X,Y,Z,30)</command>
+</session>
+<session>
+<command time_stamp="14a9ce9d671">%-- 12/30/14 08:36:18 PM --%</command>
+</session>
+<session>
+<command time_stamp="14ac1cbd2db">%-- 01/07/15 12:29:28 AM --%</command>
+</session>
+</history>

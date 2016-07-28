@@ -1,0 +1,4 @@
+#!/bin/bash
+export XAUTHORITY=''
+export QT_GRAPHICSSYSTEM=native
+/mri/medinria/bin/medInria_launcher.sh

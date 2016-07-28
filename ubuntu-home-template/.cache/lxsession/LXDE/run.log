@@ -1,0 +1,392 @@
+** Message: environement.vala:58: Exporting primary_variable
+** Message: environement.vala:59: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: environement.vala:149: confir_dirs is null, export : /etc/xdg
+** Message: environement.vala:183: Exporting XDG_CONFIG_DIRS
+** Message: environement.vala:190: data_dirs is null, export : /usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: environement.vala:224: Exporting XDG_DATA_DIRS
+** Message: utils.vala:68: User config used : /home/ubuntu/.config/lxsession/LXDE/desktop.conf
+** Message: utils.vala:89: Final file used : /home/ubuntu/.config/lxsession/LXDE/desktop.conf
+** Message: settings.vala:619: Create new config key: Session;windows_manager;command;
+** Message: settings.vala:105: Enter if of read_value for Session, windows_manager, command, string, openbox: 
+** Message: settings.vala:359: key of set_value: Session;windows_manager;command;
+** Message: settings.vala:924: Changing Session - windows_manager - command to openbox
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Session;windows_manager;session;
+** Message: settings.vala:105: Enter if of read_value for Session, windows_manager, session, string, LXDE: 
+** Message: settings.vala:359: key of set_value: Session;windows_manager;session;
+** Message: settings.vala:924: Changing Session - windows_manager - session to LXDE
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Session;windows_manager;extras;
+** Message: settings.vala:513: Key file does not have key 'windows_manager/extras'
+** Message: settings.vala:105: Enter if of read_value for Session, windows_manager, extras, string, (null): 
+** Message: settings.vala:513: Key file does not have key 'panel/command'
+** Message: settings.vala:513: Key file does not have key 'dock/command'
+** Message: settings.vala:513: Key file does not have key 'file_manager/command'
+** Message: settings.vala:513: Key file does not have key 'desktop_manager/command'
+** Message: settings.vala:619: Create new config key: Session;launcher_manager;command;
+** Message: settings.vala:105: Enter if of read_value for Session, launcher_manager, command, string, lxpanelctl: 
+** Message: settings.vala:359: key of set_value: Session;launcher_manager;command;
+** Message: settings.vala:924: Changing Session - launcher_manager - command to lxpanelctl
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Session;launcher_manager;autostart;
+** Message: settings.vala:513: Key file does not have key 'launcher_manager/autostart'
+** Message: settings.vala:105: Enter if of read_value for Session, launcher_manager, autostart, string, (null): 
+** Message: settings.vala:513: Key file does not have key 'composite_manager/command'
+** Message: settings.vala:513: Key file does not have key 'im1/command'
+** Message: settings.vala:513: Key file does not have key 'im2/command'
+** Message: settings.vala:513: Key file does not have key 'widget1/command'
+** Message: settings.vala:513: Key file does not have key 'notification/command'
+** Message: settings.vala:513: Key file does not have key 'keybindings/command'
+** Message: settings.vala:619: Create new config key: Session;screensaver;command;
+** Message: settings.vala:513: Key file does not have key 'screensaver/command'
+** Message: settings.vala:105: Enter if of read_value for Session, screensaver, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;power_manager;command;
+** Message: settings.vala:513: Key file does not have key 'power_manager/command'
+** Message: settings.vala:105: Enter if of read_value for Session, power_manager, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;polkit;command;
+** Message: settings.vala:513: Key file does not have key 'polkit/command'
+** Message: settings.vala:105: Enter if of read_value for Session, polkit, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;audio_manager;command;
+** Message: settings.vala:513: Key file does not have key 'audio_manager/command'
+** Message: settings.vala:105: Enter if of read_value for Session, audio_manager, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;quit_manager;command;
+** Message: settings.vala:105: Enter if of read_value for Session, quit_manager, command, string, lxsession-logout: 
+** Message: settings.vala:359: key of set_value: Session;quit_manager;command;
+** Message: settings.vala:924: Changing Session - quit_manager - command to lxsession-logout
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:105: Enter if of read_value for Session, quit_manager, command, string, lxsession-logout: 
+** Message: settings.vala:619: Create new config key: Session;quit_manager;image;
+** Message: settings.vala:105: Enter if of read_value for Session, quit_manager, image, string, /usr/share/lxde/images/logout-banner.png: 
+** Message: settings.vala:359: key of set_value: Session;quit_manager;image;
+** Message: settings.vala:924: Changing Session - quit_manager - image to /usr/share/lxde/images/logout-banner.png
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Session;quit_manager;layout;
+** Message: settings.vala:105: Enter if of read_value for Session, quit_manager, layout, string, top: 
+** Message: settings.vala:359: key of set_value: Session;quit_manager;layout;
+** Message: settings.vala:924: Changing Session - quit_manager - layout to top
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Session;workspace_manager;command;
+** Message: settings.vala:513: Key file does not have key 'workspace_manager/command'
+** Message: settings.vala:105: Enter if of read_value for Session, workspace_manager, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;terminal_manager;command;
+** Message: settings.vala:105: Enter if of read_value for Session, terminal_manager, command, string, lxterminal: 
+** Message: settings.vala:359: key of set_value: Session;terminal_manager;command;
+** Message: settings.vala:924: Changing Session - terminal_manager - command to lxterminal
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Session;screenshot_manager;command;
+** Message: settings.vala:513: Key file does not have key 'screenshot_manager/command'
+** Message: settings.vala:105: Enter if of read_value for Session, screenshot_manager, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;lock_manager;command;
+** Message: settings.vala:105: Enter if of read_value for Session, lock_manager, command, string, lxlock: 
+** Message: settings.vala:359: key of set_value: Session;lock_manager;command;
+** Message: settings.vala:924: Changing Session - lock_manager - command to lxlock
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Session;message_manager;command;
+** Message: settings.vala:513: Key file does not have key 'message_manager/command'
+** Message: settings.vala:105: Enter if of read_value for Session, message_manager, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;upgrade_manager;command;
+** Message: settings.vala:513: Key file does not have key 'upgrade_manager/command'
+** Message: settings.vala:105: Enter if of read_value for Session, upgrade_manager, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;clipboard;command;
+** Message: settings.vala:105: Enter if of read_value for Session, clipboard, command, string, lxclipboard: 
+** Message: settings.vala:359: key of set_value: Session;clipboard;command;
+** Message: settings.vala:924: Changing Session - clipboard - command to lxclipboard
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Session;disable_autostart;;
+** Message: settings.vala:105: Enter if of read_value for Session, disable_autostart, (null), string, no: 
+** Message: settings.vala:359: key of set_value: Session;disable_autostart;;
+** Message: settings.vala:912: Changing Session - disable_autostart to no
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Session;upstart_user_session;;
+** Message: settings.vala:513: Key file does not have key 'upstart_user_session'
+** Message: settings.vala:105: Enter if of read_value for Session, upstart_user_session, (null), string, (null): 
+** Message: settings.vala:619: Create new config key: Session;xsettings_manager;command;
+** Message: settings.vala:105: Enter if of read_value for Session, xsettings_manager, command, string, build-in: 
+** Message: settings.vala:359: key of set_value: Session;xsettings_manager;command;
+** Message: settings.vala:924: Changing Session - xsettings_manager - command to build-in
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Session;proxy_manager;command;
+** Message: settings.vala:105: Enter if of read_value for Session, proxy_manager, command, string, build-in: 
+** Message: settings.vala:359: key of set_value: Session;proxy_manager;command;
+** Message: settings.vala:924: Changing Session - proxy_manager - command to build-in
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Session;proxy_manager;http;
+** Message: settings.vala:513: Key file does not have key 'proxy_manager/http'
+** Message: settings.vala:105: Enter if of read_value for Session, proxy_manager, http, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;a11y;command;
+** Message: settings.vala:513: Key file does not have key 'a11y/command'
+** Message: settings.vala:105: Enter if of read_value for Session, a11y, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;keyring;command;
+** Message: settings.vala:105: Enter if of read_value for Session, keyring, command, string, ssh-agent: 
+** Message: settings.vala:359: key of set_value: Session;keyring;command;
+** Message: settings.vala:924: Changing Session - keyring - command to ssh-agent
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Session;xrandr;command;
+** Message: settings.vala:513: Key file does not have key 'xrandr/command'
+** Message: settings.vala:105: Enter if of read_value for Session, xrandr, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;webbrowser;command;
+** Message: settings.vala:513: Key file does not have key 'webbrowser/command'
+** Message: settings.vala:105: Enter if of read_value for Session, webbrowser, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;email;command;
+** Message: settings.vala:513: Key file does not have key 'email/command'
+** Message: settings.vala:105: Enter if of read_value for Session, email, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;pdf_reader;command;
+** Message: settings.vala:513: Key file does not have key 'pdf_reader/command'
+** Message: settings.vala:105: Enter if of read_value for Session, pdf_reader, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;video_player;command;
+** Message: settings.vala:513: Key file does not have key 'video_player/command'
+** Message: settings.vala:105: Enter if of read_value for Session, video_player, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;audio_player;command;
+** Message: settings.vala:513: Key file does not have key 'audio_player/command'
+** Message: settings.vala:105: Enter if of read_value for Session, audio_player, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;images_display;command;
+** Message: settings.vala:513: Key file does not have key 'images_display/command'
+** Message: settings.vala:105: Enter if of read_value for Session, images_display, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;text_editor;command;
+** Message: settings.vala:513: Key file does not have key 'text_editor/command'
+** Message: settings.vala:105: Enter if of read_value for Session, text_editor, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;archive;command;
+** Message: settings.vala:513: Key file does not have key 'archive/command'
+** Message: settings.vala:105: Enter if of read_value for Session, archive, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;charmap;command;
+** Message: settings.vala:513: Key file does not have key 'charmap/command'
+** Message: settings.vala:105: Enter if of read_value for Session, charmap, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;calculator;command;
+** Message: settings.vala:513: Key file does not have key 'calculator/command'
+** Message: settings.vala:105: Enter if of read_value for Session, calculator, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;spreadsheet;command;
+** Message: settings.vala:513: Key file does not have key 'spreadsheet/command'
+** Message: settings.vala:105: Enter if of read_value for Session, spreadsheet, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;bittorent;command;
+** Message: settings.vala:513: Key file does not have key 'bittorent/command'
+** Message: settings.vala:105: Enter if of read_value for Session, bittorent, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;document;command;
+** Message: settings.vala:513: Key file does not have key 'document/command'
+** Message: settings.vala:105: Enter if of read_value for Session, document, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;webcam;command;
+** Message: settings.vala:513: Key file does not have key 'webcam/command'
+** Message: settings.vala:105: Enter if of read_value for Session, webcam, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;burn;command;
+** Message: settings.vala:513: Key file does not have key 'burn/command'
+** Message: settings.vala:105: Enter if of read_value for Session, burn, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;notes;command;
+** Message: settings.vala:513: Key file does not have key 'notes/command'
+** Message: settings.vala:105: Enter if of read_value for Session, notes, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;disk_utility;command;
+** Message: settings.vala:513: Key file does not have key 'disk_utility/command'
+** Message: settings.vala:105: Enter if of read_value for Session, disk_utility, command, string, (null): 
+** Message: settings.vala:619: Create new config key: Session;tasks;command;
+** Message: settings.vala:513: Key file does not have key 'tasks/command'
+** Message: settings.vala:105: Enter if of read_value for Session, tasks, command, string, (null): 
+** Message: settings.vala:513: Key file does not have group 'Keymap'
+** Message: settings.vala:619: Create new config key: State;laptop_mode;;
+** Message: settings.vala:513: Key file does not have key 'laptop_mode'
+** Message: settings.vala:105: Enter if of read_value for State, laptop_mode, (null), string, (null): 
+** Message: settings.vala:619: Create new config key: State;guess_default;;
+** Message: settings.vala:105: Enter if of read_value for State, guess_default, (null), string, true: 
+** Message: settings.vala:359: key of set_value: State;guess_default;;
+** Message: settings.vala:912: Changing State - guess_default to true
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Dbus;lxde;;
+** Message: settings.vala:105: Enter if of read_value for Dbus, lxde, (null), string, true: 
+** Message: settings.vala:359: key of set_value: Dbus;lxde;;
+** Message: settings.vala:912: Changing Dbus - lxde to true
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Dbus;gnome;;
+** Message: settings.vala:513: Key file does not have key 'gnome'
+** Message: settings.vala:105: Enter if of read_value for Dbus, gnome, (null), string, (null): 
+** Message: settings.vala:619: Create new config key: Updates;type;;
+** Message: settings.vala:513: Key file does not have group 'Updates'
+** Message: settings.vala:105: Enter if of read_value for Updates, type, (null), string, (null): 
+** Message: settings.vala:619: Create new config key: Environment;type;;
+** Message: settings.vala:513: Key file does not have key 'type'
+** Message: settings.vala:105: Enter if of read_value for Environment, type, (null), string, (null): 
+** Message: settings.vala:619: Create new config key: Environment;menu_prefix;;
+** Message: settings.vala:105: Enter if of read_value for Environment, menu_prefix, (null), string, lxde-: 
+** Message: settings.vala:359: key of set_value: Environment;menu_prefix;;
+** Message: settings.vala:912: Changing Environment - menu_prefix to lxde-
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;sNet;ThemeName;
+** Message: settings.vala:105: Enter if of read_value for GTK, sNet, ThemeName, string, Clearlooks: 
+** Message: settings.vala:359: key of set_value: GTK;sNet;ThemeName;
+** Message: settings.vala:924: Changing GTK - sNet - ThemeName to Clearlooks
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;sNet;IconThemeName;
+** Message: settings.vala:105: Enter if of read_value for GTK, sNet, IconThemeName, string, nuoveXT2: 
+** Message: settings.vala:359: key of set_value: GTK;sNet;IconThemeName;
+** Message: settings.vala:924: Changing GTK - sNet - IconThemeName to nuoveXT2
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;sGtk;FontName;
+** Message: settings.vala:105: Enter if of read_value for GTK, sGtk, FontName, string, Sans 10: 
+** Message: settings.vala:359: key of set_value: GTK;sGtk;FontName;
+** Message: settings.vala:924: Changing GTK - sGtk - FontName to Sans 10
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;iGtk;ToolbarStyle;
+** Message: settings.vala:105: Enter if of read_value for GTK, iGtk, ToolbarStyle, string, 3: 
+** Message: settings.vala:359: key of set_value: GTK;iGtk;ToolbarStyle;
+** Message: settings.vala:924: Changing GTK - iGtk - ToolbarStyle to 3
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;iGtk;ButtonImages;
+** Message: settings.vala:105: Enter if of read_value for GTK, iGtk, ButtonImages, string, 1: 
+** Message: settings.vala:359: key of set_value: GTK;iGtk;ButtonImages;
+** Message: settings.vala:924: Changing GTK - iGtk - ButtonImages to 1
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;iGtk;MenuImages;
+** Message: settings.vala:105: Enter if of read_value for GTK, iGtk, MenuImages, string, 1: 
+** Message: settings.vala:359: key of set_value: GTK;iGtk;MenuImages;
+** Message: settings.vala:924: Changing GTK - iGtk - MenuImages to 1
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;iGtk;CursorThemeSize;
+** Message: settings.vala:105: Enter if of read_value for GTK, iGtk, CursorThemeSize, string, 18: 
+** Message: settings.vala:359: key of set_value: GTK;iGtk;CursorThemeSize;
+** Message: settings.vala:924: Changing GTK - iGtk - CursorThemeSize to 18
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;iXft;Antialias;
+** Message: settings.vala:105: Enter if of read_value for GTK, iXft, Antialias, string, 1: 
+** Message: settings.vala:359: key of set_value: GTK;iXft;Antialias;
+** Message: settings.vala:924: Changing GTK - iXft - Antialias to 1
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;iXft;Hinting;
+** Message: settings.vala:105: Enter if of read_value for GTK, iXft, Hinting, string, 1: 
+** Message: settings.vala:359: key of set_value: GTK;iXft;Hinting;
+** Message: settings.vala:924: Changing GTK - iXft - Hinting to 1
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;sXft;HintStyle;
+** Message: settings.vala:105: Enter if of read_value for GTK, sXft, HintStyle, string, hintslight: 
+** Message: settings.vala:359: key of set_value: GTK;sXft;HintStyle;
+** Message: settings.vala:924: Changing GTK - sXft - HintStyle to hintslight
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;sXft;RGBA;
+** Message: settings.vala:105: Enter if of read_value for GTK, sXft, RGBA, string, rgb: 
+** Message: settings.vala:359: key of set_value: GTK;sXft;RGBA;
+** Message: settings.vala:924: Changing GTK - sXft - RGBA to rgb
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;sGtk;ColorScheme;
+** Message: settings.vala:513: Key file does not have key 'sGtk/ColorScheme'
+** Message: settings.vala:105: Enter if of read_value for GTK, sGtk, ColorScheme, string, (null): 
+** Message: settings.vala:619: Create new config key: GTK;sGtk;CursorThemeName;
+** Message: settings.vala:105: Enter if of read_value for GTK, sGtk, CursorThemeName, string, DMZ-White: 
+** Message: settings.vala:359: key of set_value: GTK;sGtk;CursorThemeName;
+** Message: settings.vala:924: Changing GTK - sGtk - CursorThemeName to DMZ-White
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;iGtk;ToolbarIconSize;
+** Message: settings.vala:105: Enter if of read_value for GTK, iGtk, ToolbarIconSize, string, 3: 
+** Message: settings.vala:359: key of set_value: GTK;iGtk;ToolbarIconSize;
+** Message: settings.vala:924: Changing GTK - iGtk - ToolbarIconSize to 3
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;iNet;EnableEventSounds;
+** Message: settings.vala:105: Enter if of read_value for GTK, iNet, EnableEventSounds, string, 1: 
+** Message: settings.vala:359: key of set_value: GTK;iNet;EnableEventSounds;
+** Message: settings.vala:924: Changing GTK - iNet - EnableEventSounds to 1
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: GTK;iNet;EnableInputFeedbackSounds;
+** Message: settings.vala:105: Enter if of read_value for GTK, iNet, EnableInputFeedbackSounds, string, 1: 
+** Message: settings.vala:359: key of set_value: GTK;iNet;EnableInputFeedbackSounds;
+** Message: settings.vala:924: Changing GTK - iNet - EnableInputFeedbackSounds to 1
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Mouse;AccFactor;;
+** Message: settings.vala:105: Enter if of read_value for Mouse, AccFactor, (null), string, 20: 
+** Message: settings.vala:359: key of set_value: Mouse;AccFactor;;
+** Message: settings.vala:912: Changing Mouse - AccFactor to 20
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Mouse;AccThreshold;;
+** Message: settings.vala:105: Enter if of read_value for Mouse, AccThreshold, (null), string, 10: 
+** Message: settings.vala:359: key of set_value: Mouse;AccThreshold;;
+** Message: settings.vala:912: Changing Mouse - AccThreshold to 10
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Mouse;LeftHanded;;
+** Message: settings.vala:105: Enter if of read_value for Mouse, LeftHanded, (null), string, 0: 
+** Message: settings.vala:359: key of set_value: Mouse;LeftHanded;;
+** Message: settings.vala:912: Changing Mouse - LeftHanded to 0
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Keyboard;Delay;;
+** Message: settings.vala:105: Enter if of read_value for Keyboard, Delay, (null), string, 500: 
+** Message: settings.vala:359: key of set_value: Keyboard;Delay;;
+** Message: settings.vala:912: Changing Keyboard - Delay to 500
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Keyboard;Interval;;
+** Message: settings.vala:105: Enter if of read_value for Keyboard, Interval, (null), string, 30: 
+** Message: settings.vala:359: key of set_value: Keyboard;Interval;;
+** Message: settings.vala:912: Changing Keyboard - Interval to 30
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:619: Create new config key: Keyboard;Beep;;
+** Message: settings.vala:105: Enter if of read_value for Keyboard, Beep, (null), string, 1: 
+** Message: settings.vala:359: key of set_value: Keyboard;Beep;;
+** Message: settings.vala:912: Changing Keyboard - Beep to 1
+** Message: settings.vala:860: Saving desktop file
+** Message: settings.vala:435: Monitoring: /home/ubuntu/.config/lxsession/LXDE/desktop.conf
+** Message: settings.vala:439: Desktop file is already in config home, do nothing
+** Message: settings.vala:346: Settings default for GTK, iGtk, ColorScheme : 
+** Message: settings.vala:359: key of set_value: GTK;iGtk;ColorScheme;
+** Message: settings.vala:924: Changing GTK - iGtk - ColorScheme to 
+** Message: settings.vala:860: Saving desktop file
+** Message: environement.vala:79: Exporting variable
+** Message: environement.vala:80: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: environement.vala:176: custom_config :
+** Message: environement.vala:177: config_dirs :/etc/xdg
+** Message: environement.vala:178: confir_dirs not null, export : /etc/xdg
+** Message: environement.vala:183: Exporting XDG_CONFIG_DIRS
+** Message: environement.vala:217: custom_data :
+** Message: environement.vala:218: data_dirs :/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: environement.vala:219: data_dirs not null, export : /usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: environement.vala:224: Exporting XDG_DATA_DIRS
+
+** (lxsession:11): WARNING **: process.vala:49: Failed to execute child process "xprop" (No such file or directory)
+
+** (lxsession:11): WARNING **: process.vala:50: Error when launching xprop
+
+** (lxsession:11): WARNING **: process.vala:49: Failed to execute child process "dbus-launch" (No such file or directory)
+
+** (lxsession:11): WARNING **: process.vala:50: Error when launching dbus-launch
+** Message: utils.vala:79: Config system location : /etc/xdg/lxsession/LXDE
+** Message: utils.vala:85: System system path location : /etc/xdg/lxsession/LXDE/conffiles.conf
+** Message: utils.vala:89: Final file used : /etc/xdg/lxsession/LXDE/conffiles.conf
+** Message: options.vala:164: Activate xsettings_manager build-in
+** Message: utils.vala:68: User config used : /home/ubuntu/.config/lxsession/LXDE/desktop.conf
+** Message: utils.vala:89: Final file used : /home/ubuntu/.config/lxsession/LXDE/desktop.conf
+** Message: main.vala:231: DEBUG2 : openbox
+** Message: utils.vala:68: User config used : /home/ubuntu/.config/lxsession/LXDE/autostart
+** Message: utils.vala:89: Final file used : /home/ubuntu/.config/lxsession/LXDE/autostart
+** Message: autostart.vala:42: Autostart path : /home/ubuntu/.config/lxsession/LXDE/autostart
+
+** (lxsession:11): WARNING **: app.vala:86: Failed to execute child process "xscreensaver" (No such file or directory)
+
+** (lxsession:11): WARNING **: app.vala:87: Error when launching xscreensaver
+** Message: app.vala:76: Launching lxpanel 
+** Message: app.vala:76: Launching pcmanfm 
+
+** (lxsession:11): WARNING **: app.vala:86: Failed to execute child process "/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1" (No such file or directory)
+
+** (lxsession:11): WARNING **: app.vala:87: Error when launching /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+** Message: options.vala:107: Create build-in Clipboard
+** Message: main.vala:429: Check keymap_mode (null)
+** Message: app.vala:76: Launching /usr/bin/ssh-agent 
+SSH_AUTH_SOCK=/tmp/ssh-BJF7Wn5iD1Nt/agent.53; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=54; export SSH_AGENT_PID;
+echo Agent pid 54;
+
+** (lxsession:11): WARNING **: main.vala:486: Could not aquire name
+
+** Message: app.vala:130: /usr/bin/ssh-agent exit with this type of exit: 0
+
+** (pcmanfm:50): WARNING **: terminal x-terminal-emulator isn't known, consider report it to LibFM developers
+
+** (pcmanfm:50): WARNING **: modules directory is not accessible
+
+** (pcmanfm:50): WARNING **: modules directory is not accessible
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+** Message: settings.vala:482: Desktop file change, reloading XSettings daemon
+** Message: options.vala:186: Reload xsettings_manager build-in
+** Message: utils.vala:68: User config used : /home/ubuntu/.config/lxsession/LXDE/desktop.conf
+** Message: utils.vala:89: Final file used : /home/ubuntu/.config/lxsession/LXDE/desktop.conf
+** Message: settings.vala:476: Reload the xsettings option
+** Message: settings.vala:482: Desktop file change, reloading XSettings daemon
+** Message: options.vala:186: Reload xsettings_manager build-in
+** Message: utils.vala:68: User config used : /home/ubuntu/.config/lxsession/LXDE/desktop.conf
+** Message: utils.vala:89: Final file used : /home/ubuntu/.config/lxsession/LXDE/desktop.conf
+** Message: settings.vala:476: Reload the xsettings option
+
+(lxpanel:49): Gtk-WARNING **: Could not find the icon 'applications-science'. The 'hicolor' theme
+was not found either, perhaps you need to install it.
+You can get a copy from:
+	http://icon-theme.freedesktop.org/releases

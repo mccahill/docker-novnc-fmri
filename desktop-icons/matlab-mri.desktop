@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Matlab-MRI
+Comment=Matlab mathematics application
+Exec=/matlabR2014a/bin/matlab -desktop -r "addpath('/mri/spm12',genpath('/mri/BIAC'))"
+Icon=leafpad
+Terminal=false
+Type=Application
+Categories=Education;Mathematics;

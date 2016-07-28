@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings name="matlab" xmlns="urn:mathworks.matlab.settings" xsi:schemaLocation="urn:mathworks.matlab.settings settings.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <key name="DeleteFilesPermanently">
+        <bool>
+        </bool>
+    </key>
+    <key name="UserPath">
+        <string>
+        </string>
+    </key>
+    <settings name="apps" visible="true">
+        <key name="AppsInstallFolder" visible="true">
+            <string>
+            </string>
+        </key>
+    </settings>
+    <settings name="class">
+        <key name="UseFullNameInDisplayHeader">
+            <bool>
+            </bool>
+        </key>
+    </settings>
+    <settings name="desktop">
+        <key name="EnableMlxSupport">
+            <bool>
+            </bool>
+        </key>
+        <settings name="arrayeditor">
+            <key name="CodeGenEnabled">
+                <bool>
+                </bool>
+            </key>
+        </settings>
+        <settings name="commandwindow">
+            <key name="ErrorColor">
+                <int32 minArraySize="3" maxArraySize="3">
+                </int32>
+            </key>
+            <key name="ShowTypoSuggestions">
+                <bool>
+                </bool>
+            </key>
+            <key name="WarningColor">
+                <int32 minArraySize="3" maxArraySize="3">
+                </int32>
+            </key>
+        </settings>
+        <settings name="currentfolder">
+            <key name="CurrentFolderSize">
+                <int32>
+                </int32>
+            </key>
+            <key name="History">
+                <string minArraySize="0" maxArraySize="500">
+                </string>
+            </key>
+            <key name="HistorySize">
+                <int32>
+                </int32>
+            </key>
+            <key name="ShowHiddenFiles">
+                <bool>
+                </bool>
+            </key>
+            <settings name="autorefresh">
+                <key name="Enabled">
+                    <bool>
+                    </bool>
+                </key>
+                <key name="Interval">
+                    <int32>
+                    </int32>
+                </key>
+            </settings>
+            <settings name="lastfolder">
+                <key name="ClosedGroups">
+                    <string minArraySize="0" maxArraySize="100000">
+                        <value><![CDATA[]]></value>
+                    </string>
+                </key>
+                <key name="ColumnOrder">
+                    <string minArraySize="0" maxArraySize="6">
+                        <value><![CDATA[icon]]></value>
+                        <value><![CDATA[name]]></value>
+                        <value><![CDATA[size]]></value>
+                        <value><![CDATA[modified]]></value>
+                        <value><![CDATA[__vertical_attribute:description]]></value>
+                        <value><![CDATA[type]]></value>
+                    </string>
+                </key>
+                <key name="ColumnSizes">
+                    <string minArraySize="0" maxArraySize="100000">
+                        <value><![CDATA[40]]></value>
+                        <value><![CDATA[140]]></value>
+                        <value><![CDATA[0]]></value>
+                        <value><![CDATA[0]]></value>
+                        <value><![CDATA[0]]></value>
+                        <value><![CDATA[0]]></value>
+                    </string>
+                </key>
+                <key name="GroupColumn">
+                    <string>
+                        <value><![CDATA[]]></value>
+                    </string>
+                </key>
+                <key name="GroupMode">
+                    <string>
+                        <value><![CDATA[]]></value>
+                    </string>
+                </key>
+                <key name="OpenGroups">
+                    <string minArraySize="0" maxArraySize="100000">
+                    </string>
+                </key>
+                <key name="SortColumn">
+                    <string>
+                        <value><![CDATA[name]]></value>
+                    </string>
+                </key>
+                <key name="SortDescending">
+                    <bool>
+                        <value>0</value>
+                    </bool>
+                </key>
+                <key name="VisibleColumns">
+                    <string minArraySize="0" maxArraySize="100">
+                        <value><![CDATA[icon]]></value>
+                        <value><![CDATA[name]]></value>
+                    </string>
+                </key>
+            </settings>
+            <settings name="lastsearch">
+                <key name="ClosedGroups">
+                    <string minArraySize="0" maxArraySize="10000">
+                        <value><![CDATA[]]></value>
+                    </string>
+                </key>
+                <key name="ColumnOrder">
+                    <string minArraySize="0" maxArraySize="7">
+                        <value><![CDATA[icon]]></value>
+                        <value><![CDATA[name]]></value>
+                        <value><![CDATA[size]]></value>
+                        <value><![CDATA[modified]]></value>
+                        <value><![CDATA[__vertical_attribute:description]]></value>
+                        <value><![CDATA[location]]></value>
+                        <value><![CDATA[type]]></value>
+                    </string>
+                </key>
+                <key name="ColumnSizes">
+                    <string minArraySize="0" maxArraySize="100000">
+                        <value><![CDATA[40]]></value>
+                        <value><![CDATA[0]]></value>
+                        <value><![CDATA[0]]></value>
+                        <value><![CDATA[0]]></value>
+                        <value><![CDATA[0]]></value>
+                        <value><![CDATA[0]]></value>
+                        <value><![CDATA[0]]></value>
+                    </string>
+                </key>
+                <key name="GroupColumn">
+                    <string>
+                        <value><![CDATA[location]]></value>
+                    </string>
+                </key>
+                <key name="GroupMode">
+                    <string>
+                        <value><![CDATA[location]]></value>
+                    </string>
+                </key>
+                <key name="OpenGroups">
+                    <string minArraySize="0" maxArraySize="100000">
+                    </string>
+                </key>
+                <key name="SortColumn">
+                    <string>
+                        <value><![CDATA[modified]]></value>
+                    </string>
+                </key>
+                <key name="SortDescending">
+                    <bool>
+                        <value>1</value>
+                    </bool>
+                </key>
+                <key name="VisibleColumns">
+                    <string minArraySize="0" maxArraySize="100">
+                        <value><![CDATA[icon]]></value>
+                        <value><![CDATA[name]]></value>
+                        <value><![CDATA[modified]]></value>
+                        <value><![CDATA[description]]></value>
+                    </string>
+                </key>
+            </settings>
+            <settings name="pathaffordance">
+                <key name="Enabled">
+                    <bool>
+                    </bool>
+                </key>
+                <key name="Transparency">
+                    <int32>
+                    </int32>
+                </key>
+            </settings>
+        </settings>
+        <settings name="help" visible="true">
+            <key name="DocLanguage" visible="true">
+                <string>
+                </string>
+            </key>
+            <key name="SingleSource" visible="true">
+                <bool>
+                </bool>
+            </key>
+        </settings>
+        <settings name="workspace">
+            <settings name="savevariablestoscript" visible="true">
+                <key name="ArrayDimensionsFor2Dslice" visible="true">
+                    <double minArraySize="2" maxArraySize="2">
+                    </double>
+                </key>
+                <key name="MaximumArraySize" visible="true">
+                    <double>
+                    </double>
+                </key>
+                <key name="MaximumNestingLevel" visible="true">
+                    <double>
+                    </double>
+                </key>
+                <key name="MaximumTextWidth" visible="true">
+                    <double>
+                    </double>
+                </key>
+                <key name="Using2Dslice" visible="true">
+                    <bool>
+                    </bool>
+                </key>
+            </settings>
+        </settings>
+    </settings>
+</settings>
