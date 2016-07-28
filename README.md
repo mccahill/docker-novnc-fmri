@@ -5,23 +5,27 @@ binary mounted somewhere that you can link to the container, because some of
 the fMRI tools are writting using MATLAB.
 
  In the example run scripts, the host operatiing system has the MATLAB binary at 
- ```     /srv/matlabR2014a
- 
+```
+      /srv/matlabR2014a
+```
  Other assumptions:
  
  You have a directory with shared data (probably fMRI data) at 
-```      /srv/persistent-data/homedirs/shared-data-fmri	  
+```
+      /srv/persistent-data/homedirs/shared-data-fmri
+```	  
 so that we aren't using up crazy amounts of dis space for data that
 is going to be the same for all the users.
 
 So that users can persist their work through container restarts, each users has 
 a home directory that is located in the host OS at
-```     /srv/persistent-data/homedirs/user001
-```     /srv/persistent-data/homedirs/user002
-```     /srv/persistent-data/homedirs/user003
-```     ...
-```     /srv/persistent-data/homedirs/user999
-
+```
+     /srv/persistent-data/homedirs/user001
+     /srv/persistent-data/homedirs/user002
+     /srv/persistent-data/homedirs/user003
+     ...
+     /srv/persistent-data/homedirs/user999
+```
 and mounted to /home/ubuntu inside the container.
 
 Sources for the MRI tools are in the mri directory.
@@ -56,9 +60,13 @@ site certificate that you configured noVNC with, or pedantic web browsers will
 frighten users with scary warnings. 
 
 Browse to
+```
     https://your.hostname.here:6080/vnc.html
+```	
 or
+```
     https://your.hostname.here:6080/vnc_auto.html
+```
 
 You will be prompted for the vnc password which was set to 'foobar' in the
 Dockerfile build. You'll probably want to change that and also change the 
@@ -66,9 +74,9 @@ hardcoded password ('badpassword') for the ubuntu account created
 in the build process by specifying passwords when you run the container.
 
 Note that the user can skip the VNC password prompt if you redirect them to 
-
+```
  https://your.host.here:6080/vnc.html?&encrypt=1&autoconnect=1&password=foobar
-
+```
 
 Encrypted noVNC Sessions
 ------------------------
